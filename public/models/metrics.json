@@ -1,0 +1,18 @@
+{
+  "logistic_regression": {
+    "accuracy": 1.0,
+    "model_type": "Clasificaci\u00f3n Binaria",
+    "description": "Predice si un cliente se ir\u00e1 de la empresa"
+  },
+  "knn": {
+    "accuracy": 0.5,
+    "model_type": "Clasificaci\u00f3n Binaria",
+    "description": "KNN para predicci\u00f3n de Churn"
+  },
+  "kmeans": {
+    "silhouette_score": 0.19826707100822524,
+    "n_clusters": 3,
+    "model_type": "Clustering No Supervisado",
+    "description": "Segmentaci\u00f3n de clientes en 3 clusters"
+  }
+}

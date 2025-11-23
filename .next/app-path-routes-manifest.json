@@ -1,0 +1,9 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/health/route": "/api/health",
+  "/api/predict/kmeans/route": "/api/predict/kmeans",
+  "/api/predict/knn/route": "/api/predict/knn",
+  "/api/predict/logistic/route": "/api/predict/logistic",
+  "/page": "/"
+}
