@@ -29,32 +29,6 @@ Este proyecto implementa tres modelos de Machine Learning en una aplicación web
   - **Cluster 1**: Clientes estándar con gasto moderado
   - **Cluster 2**: Clientes novatos con bajo gasto
 
-## Estructura del Proyecto
-
-\`\`\`
-.
-├── app/
-│   ├── layout.tsx              # Layout raíz
-│   ├── page.tsx                # Página principal
-│   ├── globals.css             # Estilos globales (tema oscuro Vercel)
-│   └── api/
-│       └── predict/
-│           ├── logistic/       # API para Regresión Logística
-│           ├── knn/            # API para KNN
-│           └── kmeans/         # API para K-Means
-├── components/
-│   ├── home.tsx                # Componente principal con tabs
-│   ├── model-comparison.tsx    # Tabla comparativa de modelos
-│   └── models/
-│       ├── logistic-regression-predictor.tsx
-│       ├── knn-predictor.tsx
-│       └── kmeans-clusterer.tsx
-├── scripts/
-│   └── train_models.py         # Script de entrenamiento de modelos
-└── datasets/
-    └── telco_churn.csv         # Dataset principal
-\`\`\`
-
 ## Configuración Técnica
 
 ### Frontend
@@ -83,25 +57,25 @@ Este proyecto implementa tres modelos de Machine Learning en una aplicación web
 - pip/conda para gestión de paquetes
 
 ### Instalación Frontend
-\`\`\`bash
+
 npm install
-\`\`\`
+
 
 ### Instalación dependencias Python
-\`\`\`bash
+
 pip install pandas numpy scikit-learn joblib
-\`\`\`
+
 
 
 ## Instalacion Para la ejecucion de Notebook 
-\`\`\`
+
 pip install seaborn
-\`\`\`
+
 
 ### Entrenamiento de Modelos
-\`\`\`bash
+
 python scripts/train_models.py
-\`\`\`
+
 
 Este comando genera:
 - `public/models/logistic_regression.pkl`
@@ -112,9 +86,8 @@ Este comando genera:
 - `public/models/metrics.json`
 
 ### Ejecución de la aplicación
-\`\`\`bash
+
 npm run dev
-\`\`\`
 
 Accede a `http://localhost:3000`
 
@@ -160,7 +133,7 @@ Visualiza un resumen de los tres modelos, sus métricas de performance y una tab
 
 ## Dataset: Telco Customer Churn
 
-**Origen**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/563/indian+liver+patient+records)
+**Origen**: [UCI Machine Learning Repository](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 **Descripción**: 
 - 7,043 registros de clientes
@@ -184,12 +157,7 @@ Visualiza un resumen de los tres modelos, sus métricas de performance y una tab
 | KNN (k=5) | Accuracy | 90.8% |
 | K-Means (k=3) | Silhouette Score | 0.62 |
 
-## Conclusiones y Recomendaciones
-
-1. **Regresión Logística** es la mejor opción para predicción de churn en este dataset
-2. **KNN** ofrece un buen balance entre performance e interpretabilidad
-3. **K-Means** es excelente para entender segmentación de clientes
-4. La combinación de estos modelos proporciona insights completos
+  
 
 ## Autores
 
