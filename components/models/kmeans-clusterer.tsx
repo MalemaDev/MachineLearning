@@ -60,7 +60,7 @@ export function KMeansClusterer() {
   const clusterLabels = ["Premium", "Estándar", "Emergente"]
 
   // Emojis para hacerlo más visual y agradable
-  const clusterEmojis = ["👑", "⚡", "🌱"]
+  const clusterEmojis = ["👑", "⚡", "🌱    "]
 
   return (
     <div className="space-y-6">
@@ -141,7 +141,7 @@ export function KMeansClusterer() {
           <Card className={`border ${clusterColors[result.cluster]}`}>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <span>{clusterEmojis[result.cluster]}</span>
+                <span></span>
                 Cluster {result.cluster}: {clusterLabels[result.cluster]}
               </CardTitle>
             </CardHeader>
@@ -191,9 +191,9 @@ export function KMeansClusterer() {
                 
                 {/* Listado visual de cada cluster */}
                 {[
-                  { emoji: "👑", label: "Premium", size: 2100, color: "bg-blue-500/20 border-blue-500/30" },
-                  { emoji: "⚡", label: "Estándar", size: 3400, color: "bg-purple-500/20 border-purple-500/30" },
-                  { emoji: "🌱", label: "Emergente", size: 3500, color: "bg-cyan-500/20 border-cyan-500/30" },
+                  { emoji: "", label: "Premium", size: 2100, color: "bg-blue-500/20 border-blue-500/30" },
+                  { emoji: "", label: "Estándar", size: 3400, color: "bg-purple-500/20 border-purple-500/30" },
+                  { emoji: "", label: "Emergente", size: 3500, color: "bg-cyan-500/20 border-cyan-500/30" },
                 ].map((cluster, idx) => (
                   
                   <div key={idx} className={`p-3 rounded-lg border ${cluster.color}`}>
